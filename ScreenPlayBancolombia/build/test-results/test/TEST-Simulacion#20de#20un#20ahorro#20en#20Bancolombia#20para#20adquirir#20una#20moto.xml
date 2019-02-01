@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Simulacion de un ahorro en Bancolombia para adquirir una moto" tests="6" skipped="0" failures="1" errors="0" timestamp="2019-01-29T14:00:05" hostname="CPX-0BMFZL894CK" time="247.682">
+  <properties/>
+  <testcase name="Prueba a realizar - Validar que cada campo vacio sea obligatorio" classname="Simulacion de un ahorro en Bancolombia para adquirir una moto" time="48.086"/>
+  <testcase name="Prueba a realizar - Validar que en el campo Para que quieres ahorrar coincida con el archivo excel" classname="Simulacion de un ahorro en Bancolombia para adquirir una moto" time="48.817"/>
+  <testcase name="Prueba a realizar - Validar que el campo meses para alcanzar la meta funcione correctamente" classname="Simulacion de un ahorro en Bancolombia para adquirir una moto" time="35.774"/>
+  <testcase name="Prueba a realizar - Validar que el campo meses para alcanzar la meta valide el valor maximo correctamente" classname="Simulacion de un ahorro en Bancolombia para adquirir una moto" time="37.654"/>
+  <testcase name="Prueba a realizar - Validar que el campo cuanto dinero te falta para lograr tu meta genere una alerta que erronea" classname="Simulacion de un ahorro en Bancolombia para adquirir una moto" time="38.4"/>
+  <testcase name="Prueba a realizar - Generar una excepcion" classname="Simulacion de un ahorro en Bancolombia para adquirir una moto" time="38.889">
+    <failure message="com.accenture.screenplaybancolombia.exceptions.ButtonException: El Botón aún no está habilitado" type="com.accenture.screenplaybancolombia.exceptions.ButtonException">com.accenture.screenplaybancolombia.exceptions.ButtonException: El Botón aún no está habilitado
+	at com.accenture.screenplaybancolombia.tasks.GoTo.performAs(GoTo.java:27)
+	at com.accenture.screenplaybancolombia.tasks.GoTo$$EnhancerByCGLIB$$67611a45.CGLIB$performAs$0(&lt;generated&gt;)
+	at com.accenture.screenplaybancolombia.tasks.GoTo$$EnhancerByCGLIB$$67611a45$$FastClassByCGLIB$$1dcb6050.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.accenture.screenplaybancolombia.tasks.GoTo$$EnhancerByCGLIB$$67611a45.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:176)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:157)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:138)
+	at com.accenture.screenplaybancolombia.stepdefinitions.StepsDefinitions1.GenerarExcepcion(StepsDefinitions1.java:107)
+	at ✽.Accenture Testing quiere dar click en un boton inhabilitado(src/test/resources/features/Bancolombia.feature:40)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Simulador Ahorro e Inversión para Carro ó Moto
+La alerta Alerta de meses está visible
+La alerta Alerta de Ahorrar está visible
+La alerta Alerta tipo de cuenta está visible
+La alerta Alerta de meses está visible
+Simulador Ahorro e Inversión para Carro ó Moto
+Vehículo
+Opciones Para que quieres Ahorar
+La opción Viaje se encuentra en el campo 'Para que quieres ahorrar'
+Opciones Para que quieres Ahorar
+La opción Educación se encuentra en el campo 'Para que quieres ahorrar'
+Opciones Para que quieres Ahorar
+La opción Vivienda se encuentra en el campo 'Para que quieres ahorrar'
+Opciones Para que quieres Ahorar
+La opción Vehículo se encuentra en el campo 'Para que quieres ahorrar'
+Opciones Para que quieres Ahorar
+La opción Entretenimiento se encuentra en el campo 'Para que quieres ahorrar'
+Opciones Para que quieres Ahorar
+La opción Retiro para la vejez se encuentra en el campo 'Para que quieres ahorrar'
+Opciones Para que quieres Ahorar
+La opción Otro se encuentra en el campo 'Para que quieres ahorrar'
+8
+Simulador Ahorro e Inversión para Carro ó Moto
+true
+Simulador Ahorro e Inversión para Carro ó Moto
+El campo no cumple con el valor máximo 240
+Simulador Ahorro e Inversión para Carro ó Moto
+El campo no cumple con el valor mínimo El campo no cumple con el valor máximo
+Simulador Ahorro e Inversión para Carro ó Moto
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 14687
+Only local connections are allowed.
+Jan 29, 2019 9:00:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Prueba a realizar - Validar que cada campo vacio sea obligatorio
+----------------------------------------------------------------------------
+Jan 29, 2019 9:00:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Prueba a realizar - Validar que en el campo Para que quieres ahorrar coincida con el archivo excel
+----------------------------------------------------------------------------
+Jan 29, 2019 9:01:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Prueba a realizar - Validar que el campo meses para alcanzar la meta funcione correctamente
+----------------------------------------------------------------------------
+Jan 29, 2019 9:02:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Prueba a realizar - Validar que el campo meses para alcanzar la meta valide el valor maximo correctamente
+----------------------------------------------------------------------------
+Jan 29, 2019 9:02:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Prueba a realizar - Validar que el campo cuanto dinero te falta para lograr tu meta genere una alerta que erronea
+----------------------------------------------------------------------------
+Jan 29, 2019 9:03:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Prueba a realizar - Generar una excepcion
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Alejo clicks on Agregar al plan de ahorros
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - El Botón aún no está habilitado
+]]></system-err>
+</testsuite>

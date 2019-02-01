@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Simulacion de un ahorro en Bancolombia para adquirir una moto","Prueba a realizar - Validar que cada campo vacio sea obligatorio","SUCCESS","2019-01-29T09:00:04.153-05:00[America/Bogota]","0.0","49.32"
+"Simulacion de un ahorro en Bancolombia para adquirir una moto","Prueba a realizar - Validar que en el campo Para que quieres ahorrar coincida con el archivo excel","SUCCESS","2019-01-29T09:00:53.474-05:00[America/Bogota]","0.0","48.83"
+"Simulacion de un ahorro en Bancolombia para adquirir una moto","Prueba a realizar - Validar que el campo meses para alcanzar la meta funcione correctamente","SUCCESS","2019-01-29T09:01:42.31-05:00[America/Bogota]","0.0","35.78"
+"Simulacion de un ahorro en Bancolombia para adquirir una moto","Prueba a realizar - Validar que el campo meses para alcanzar la meta valide el valor maximo correctamente","SUCCESS","2019-01-29T09:02:18.095-05:00[America/Bogota]","0.0","37.66"
+"Simulacion de un ahorro en Bancolombia para adquirir una moto","Prueba a realizar - Validar que el campo cuanto dinero te falta para lograr tu meta genere una alerta que erronea","SUCCESS","2019-01-29T09:02:55.761-05:00[America/Bogota]","0.0","38.4"

@@ -1,0 +1,455 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Abrir el navegador en la pagina web Bancolombia y desde personas acceder al formulario simulador de ahorro",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31989433091,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que Accenture\tTesting abrio el navegador en la pagina de bancolombia persona y accede al formulario simulador de ahorro",
+            "match": {
+              "location": "StepsDefinitions1.accederAlFormulario()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8834001797,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinitions1.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Prueba a realizar - Validar que cada campo vacio sea obligatorio",
+        "description": "",
+        "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto;prueba-a-realizar---validar-que-cada-campo-vacio-sea-obligatorio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 478589725,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Accenture Testing quiere enviar el formulario vacio con todos sus campos vacios",
+            "match": {
+              "location": "StepsDefinitions1.camposVacios()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5046532736,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Accenture Testing espera  que todas las alertas esten presentes con cada campo del formulario",
+            "match": {
+              "location": "StepsDefinitions1.validarCamposVacios()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Caracteristica1"
+          },
+          {
+            "name": "@Esc1"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Abrir el navegador en la pagina web Bancolombia y desde personas acceder al formulario simulador de ahorro",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 27592265801,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que Accenture\tTesting abrio el navegador en la pagina de bancolombia persona y accede al formulario simulador de ahorro",
+            "match": {
+              "location": "StepsDefinitions1.accederAlFormulario()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5185902545,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinitions1.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Prueba a realizar - Validar que en el campo Para que quieres ahorrar coincida con el archivo excel",
+        "description": "",
+        "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto;prueba-a-realizar---validar-que-en-el-campo-para-que-quieres-ahorrar-coincida-con-el-archivo-excel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3226464464,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Accenture Testing quiere comparar  las opciones que tiene el select coincidan con el archivo excel",
+            "match": {
+              "location": "StepsDefinitions1.compararConElExcel()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11132287765,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Accenture Testing espera que cada el numero de opciones y el nombre de cada elemento coincida con el archivo excel",
+            "match": {
+              "location": "StepsDefinitions1.validarDatosDelExcel()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Caracteristica1"
+          },
+          {
+            "name": "@Esc2"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Abrir el navegador en la pagina web Bancolombia y desde personas acceder al formulario simulador de ahorro",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24783909680,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que Accenture\tTesting abrio el navegador en la pagina de bancolombia persona y accede al formulario simulador de ahorro",
+            "match": {
+              "location": "StepsDefinitions1.accederAlFormulario()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4420243865,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinitions1.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Prueba a realizar - Validar que el campo meses para alcanzar la meta funcione correctamente",
+        "description": "",
+        "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto;prueba-a-realizar---validar-que-el-campo-meses-para-alcanzar-la-meta-funcione-correctamente",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3045887491,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Accenture Testing quiere validar que uno de los campos valide al ingresar un valor",
+            "match": {
+              "location": "StepsDefinitions1.tiposDeDatos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1631476754,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Accenture Testing espera que la alerta del campo desaparezca",
+            "match": {
+              "location": "StepsDefinitions1.recibirValidacionDeTiposDeDatos()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Caracteristica1"
+          },
+          {
+            "name": "@Esc3"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Abrir el navegador en la pagina web Bancolombia y desde personas acceder al formulario simulador de ahorro",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 26790660732,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que Accenture\tTesting abrio el navegador en la pagina de bancolombia persona y accede al formulario simulador de ahorro",
+            "match": {
+              "location": "StepsDefinitions1.accederAlFormulario()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4401015546,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinitions1.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Prueba a realizar - Validar que el campo meses para alcanzar la meta valide el valor maximo correctamente",
+        "description": "",
+        "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto;prueba-a-realizar---validar-que-el-campo-meses-para-alcanzar-la-meta-valide-el-valor-maximo-correctamente",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3098786290,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Accenture Testing quiere validar el valor maximo del campo En cuantos meses te gustaria alanzar tu meta",
+            "match": {
+              "location": "StepsDefinitions1.valorMaximo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1580770170,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Accenture Testing espera que la alerta del campo En cuantos meses te gustaria alanzar tu meta se haga visible",
+            "match": {
+              "location": "StepsDefinitions1.recibirValidacionDeValorMaximo()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Caracteristica1"
+          },
+          {
+            "name": "@Esc4"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Abrir el navegador en la pagina web Bancolombia y desde personas acceder al formulario simulador de ahorro",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 27477745776,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que Accenture\tTesting abrio el navegador en la pagina de bancolombia persona y accede al formulario simulador de ahorro",
+            "match": {
+              "location": "StepsDefinitions1.accederAlFormulario()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4566069369,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinitions1.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Prueba a realizar - Validar que el campo cuanto dinero te falta para lograr tu meta genere una alerta que erronea",
+        "description": "",
+        "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto;prueba-a-realizar---validar-que-el-campo-cuanto-dinero-te-falta-para-lograr-tu-meta-genere-una-alerta-que-erronea",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3117558348,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Accenture Testing quiere ingresar un dato invalido",
+            "match": {
+              "location": "StepsDefinitions1.IngresarUnDatoInvalidoEnCampoDeCuantoDineroTeFalta()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1570264815,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Accenture Testing espera poder ver una alerta que esta mal escrita",
+            "match": {
+              "location": "StepsDefinitions1.validarCampoDeCuantoDineroTeFalta()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Caracteristica1"
+          },
+          {
+            "name": "@Esc5"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Abrir el navegador en la pagina web Bancolombia y desde personas acceder al formulario simulador de ahorro",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 25808048885,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que Accenture\tTesting abrio el navegador en la pagina de bancolombia persona y accede al formulario simulador de ahorro",
+            "match": {
+              "location": "StepsDefinitions1.accederAlFormulario()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4485748442,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinitions1.setUp()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Prueba a realizar - Generar una excepcion",
+        "description": "",
+        "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto;prueba-a-realizar---generar-una-excepcion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.accenture.screenplaybancolombia.exceptions.ButtonException: El Botón aún no está habilitado\r\n\tat com.accenture.screenplaybancolombia.tasks.GoTo.performAs(GoTo.java:27)\r\n\tat com.accenture.screenplaybancolombia.tasks.GoTo$$EnhancerByCGLIB$$67611a45.CGLIB$performAs$0(\u003cgenerated\u003e)\r\n\tat com.accenture.screenplaybancolombia.tasks.GoTo$$EnhancerByCGLIB$$67611a45$$FastClassByCGLIB$$1dcb6050.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat com.accenture.screenplaybancolombia.tasks.GoTo$$EnhancerByCGLIB$$67611a45.performAs(\u003cgenerated\u003e)\r\n\tat net.serenitybdd.screenplay.Actor.performTask(Actor.java:176)\r\n\tat net.serenitybdd.screenplay.Actor.perform(Actor.java:157)\r\n\tat net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:138)\r\n\tat com.accenture.screenplaybancolombia.stepdefinitions.StepsDefinitions1.GenerarExcepcion(StepsDefinitions1.java:107)\r\n\tat ✽.Accenture Testing quiere dar click en un boton inhabilitado(src/test/resources/features/Bancolombia.feature:40)\r\n",
+              "duration": 7321300448,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "Accenture Testing quiere dar click en un boton inhabilitado",
+            "match": {
+              "location": "StepsDefinitions1.GenerarExcepcion()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Caracteristica1"
+          },
+          {
+            "name": "@Esc6"
+          }
+        ]
+      }
+    ],
+    "name": "Simulacion de un ahorro en Bancolombia para adquirir una moto",
+    "description": "COMO un usuario Bancolombia Alejandro Cardenas\nQUIERO validar que el formulario de simulador de ahorro este funcionando correctamente\nPARA saber mi plan de ahorro e inversion",
+    "id": "simulacion-de-un-ahorro-en-bancolombia-para-adquirir-una-moto",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Bancolombia.feature",
+    "tags": [
+      {
+        "name": "@Caracteristica1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+
+        $('.scenario-result-table').DataTable({
+
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 25,
+            "language": {
+                searchPlaceholder: "Filter",
+                search: ""
+            }
+        });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [[0, "asc",], [3, "asc",]],
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
+        });
+
+    })
+    ;
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Reto ScreenPlay</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Tag  (with Tag Caracteristica1)
+                > <span
+                    class="truncate-60">Caracteristica1</span>
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-01-2019 09:04</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+
+                <h2><i class='fa fa-tags'></i> Tag: Caracteristica1</h2>
+                <table class='overview'>
+                    <tr>
+                        <td width="375px" valign="top">
+                            <div class="test-count-summary">
+                                <div class="test-count-title">6
+                                    test scenarios </div>
+                                <div>
+
+                    <span class="test-count"> |
+                        5
+                            <a href="ce9f0b9fcb95e93fbed3403dd66415bcf38012015c8abc26c5f20227f75cbfb3.html">passed</a>
+                        
+                    </span>
+                    <span class="test-count"> |
+                        1
+                            <a href="94270aef9d2a5d42d49187f1700faee9bc5b13f707535e605a0ab10bcff8b7a5.html">unsuccessful</a>
+                        
+                    </span>(
+                    <span class="test-count">
+                        0
+                            <a href="6ad5c1b040044490692f25cb442b3f387745780136a2758604c9fcf23bb378c7.html">failed</a>
+                        ,
+                    </span>
+                    <span class="test-count">
+                        1
+                            <a href="96ebba58c4661b4138fb82374dafa7411c69e4550231136d2b36690a3bee962a.html">with errors</a>
+                        
+                    </span>)
+
+                
+
+
+
+                 |
+                    <a href="11f0c5e87a3019489318f826c994270e8d7b8a13d134eaa532ace2e75c6125e9.csv" title="Download CSV"> <i class="fa fa-download" title="Download CSV"></i></a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#summary"><i class="fas fa-home"></i> Summary</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#tests"><i class="fas fa-tachometer-alt"></i> Test
+                                            Results</a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="card border">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div id="summary" class="tab-pane fade in active">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div style="width:300px;" class="chart-container automated-and-manual-results">
+                                                            <div class="ct-chart ct-square"></div>
+                                                        </div>
+                                                        <script>
+
+                                                            var labels = ['83%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '17%', ' ', ' ', ' '];
+                                                            // Our series array that contains series objects or in this case series data arrays
+
+                                                            var series = [{meta: 'Passing tests (automated)', value: 5}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                            // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                            // as you saw in the previous example
+                                                            var options = {
+                                                                width: 350,
+                                                                height: 300
+                                                            };
+
+
+                                                            new Chartist.Pie('.ct-chart', {
+                                                                series: series,
+                                                                labels: labels
+                                                            }, {
+                                                                plugins: [ Chartist.plugins.tooltip() ],
+                                                                donut: true,
+                                                                donutWidth: 60,
+                                                                donutSolid: true,
+                                                                startAngle: 270,
+                                                                showLabel: true
+                                                            }, options);
+
+
+                                                            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                                new Chartist.Pie('.ct-chart', {
+                                                                    series: series,
+                                                                    labels: labels
+                                                                }, {
+                                                                    plugins: [ Chartist.plugins.tooltip() ],
+                                                                    donut: true,
+                                                                    donutWidth: 60,
+                                                                    donutSolid: true,
+                                                                    startAngle: 270,
+                                                                    showLabel: true
+                                                                }, options);
+                                                            });
+
+
+                                                        </script>
+                                                    </div>
+                                                    <div class="col-sm-8">
+
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Scenarios</th>
+                                                                <th scope="col" colspan="2" class="automated-stats">
+                                                                    Automated
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="ce9f0b9fcb95e93fbed3403dd66415bcf38012015c8abc26c5f20227f75cbfb3.html"><i class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    </td>
+                                                                <td class="automated-stats">5</td>
+                                                                <td class="automated-stats">83%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-stop-circle-o pending-icon'></i>&nbsp;Pending
+                                                                    </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-fast-forward skip-icon'></i>&nbsp;Skipped
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            <tr>
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="96ebba58c4661b4138fb82374dafa7411c69e4550231136d2b36690a3bee962a.html"><i class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
+                                                                    </td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">17%</td>
+                                                            <tr>
+                                                                <td class="aggregate-result-count"><i
+                                                                        class='fa fa-chain-broken compromised-icon'></i>&nbsp;Compromised
+                                                                </td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
+                                                            </tr>
+                                                            <tr class="summary-stats">
+                                                                <td class="aggregate-result-count">Total</td>
+                                                                <td class="automated-stats">6</td>
+                                                                <td class="automated-stats"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Functional Coverage Overview</h3>
+
+                                                            <table class="table" id="Feature">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Feature</th>
+                                                                        <th style=""width:7.5em;">Scenarios</th>
+                                                                        <th style=""width:7.5em;">% Pass</th>
+                                                                        <th style=""width:7.5em;">Result</th>
+                                                                        <th>Coverage</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><a href="56894a803b2f726f2fbc3f9e3a94f2277c5795df8b0a722a0609ae99cc15c815.html">Simulacion de un ahorro en bancolombia para adquirir una moto</a></td>
+                                                                        <td>6</td>
+                                                                        <td>83%</td>
+                                                                        <td><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                    <div class="progress-bar" role="progressbar"
+                                                                                         style="width: 83%; background-color: #30cb23"
+                                                                                         aria-valuenow="5"
+                                                                                         title="83% success"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                                    <div class="progress-bar" role="progressbar"
+                                                                                         style="width: 16%; background-color: darkorange"
+                                                                                         aria-valuenow="1"
+                                                                                         title="16% error"
+                                                                                         aria-valuemin="0"
+                                                                                         aria-valuemax="100">
+                                                                                    </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h3>Test Failure Overview</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Frequent Failures</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="error-color top-list-title">
+                                                                    <a href="5dc2ab949914ea069aeeda1f2dda73d0c5fdb6dc077982712627628033736c61.html"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> Element should be enabled exception</a>
+                                                                </td>
+                                                                <td><span class="badge failure-badge">1</span></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h4>Most Unstable Features</h4>
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="failure-color top-list-title"><a href="#">Simulacion de un ahorro en Bancolombia para adquirir una moto</a></td>
+                                                                    <td><span class="badge failure-badge">1</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3>Tags</h3>
+
+                                                        <span>
+                                                            <a href="56894a803b2f726f2fbc3f9e3a94f2277c5795df8b0a722a0609ae99cc15c815.html">
+                                                                <span class="badge" style="background-color:darkorange; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Simulacion de un ahorro en bancolombia para adquirir una moto (feature)&nbsp;&nbsp;&nbsp;6</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="37255104441fe502af38c6fbc0fc594a1b6d97995ef49e80d621bab217a90a20.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Esc1&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="e61cf4846037d165803125f27088a32c5e83ea8e7b1631a207569d840f85c25e.html">
+                                                                <span class="badge" style="background-color:darkorange; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Caracteristica1&nbsp;&nbsp;&nbsp;6</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="635d6fd5a8234eb69bc6f33053ed0a46b42dcd30c872f31d7e01b8b066b1b32d.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Esc2&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="bca6a8836fffddac13609cac5165dcbffc866f0f5ea1148bae86d01dc5fb242c.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Esc3&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="2cf9a1e853db55a25f248c3aad9c32b30a8099e4a37be0d91c64a351df191e4c.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Esc4&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="a902e9580325fd8e4fe9ceb46e067430498471a68da20c02cd70653c58d91cc6.html">
+                                                                <span class="badge" style="background-color:#1D9918; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Esc5&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="ecdb4a0b2627e2f8075599f89cfd71b6c672d5eba049317e2561ddb866c5bdf7.html">
+                                                                <span class="badge" style="background-color:darkorange; margin:1em;padding:4px;"><i class="fa fa-tag"></i> Esc6&nbsp;&nbsp;&nbsp;1</span>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tests" class="tab-pane fade">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
+
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th>Feature</th>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="ad3bb061cff8ecd415465fb3e0529237b0731fe39e427ebae3d9ce8bb134db11.html">Simulacion de un ahorro en Bancolombia para adquirir una moto</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="3fe9e20a8bafe24b06de42615082730d054dca01ddd73e9f1ed92083baa5a3f6.html">Prueba a realizar - Validar que cada campo vacio sea obligatorio</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>09:00:04</td>
+                                                    <td>00:49</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="ad3bb061cff8ecd415465fb3e0529237b0731fe39e427ebae3d9ce8bb134db11.html">Simulacion de un ahorro en Bancolombia para adquirir una moto</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="f2c35a6176f3cc737281920c0e8c9ef5bf6a91095ba03673c089760ef6f19335.html">Prueba a realizar - Validar que en el campo Para que quieres ahorrar coincida con el archivo excel</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>09:00:53</td>
+                                                    <td>00:48</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="ad3bb061cff8ecd415465fb3e0529237b0731fe39e427ebae3d9ce8bb134db11.html">Simulacion de un ahorro en Bancolombia para adquirir una moto</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="93b74f1e563e62d27c89866519a8617d73e38d7540dbffcc67d843e4a98fdb53.html">Prueba a realizar - Validar que el campo meses para alcanzar la meta funcione correctamente</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>09:01:42</td>
+                                                    <td>00:35</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="ad3bb061cff8ecd415465fb3e0529237b0731fe39e427ebae3d9ce8bb134db11.html">Simulacion de un ahorro en Bancolombia para adquirir una moto</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="a94fa1df00bafe55cb693be31b101a8420d98c32dbc3e831c2d22e4ffbbd0105.html">Prueba a realizar - Validar que el campo meses para alcanzar la meta valide el valor maximo correctamente</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>09:02:18</td>
+                                                    <td>00:37</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="ad3bb061cff8ecd415465fb3e0529237b0731fe39e427ebae3d9ce8bb134db11.html">Simulacion de un ahorro en Bancolombia para adquirir una moto</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="ac42d0f31718b108e8601ba2afd39a6bbdaf4d1576cc7333aa587fe7663b9876.html">Prueba a realizar - Validar que el campo cuanto dinero te falta para lograr tu meta genere una alerta que erronea</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>09:02:55</td>
+                                                    <td>00:38</td>
+                                                    <td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span style="display:none">SUCCESS</span></td>
+                                                </tr>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="ad3bb061cff8ecd415465fb3e0529237b0731fe39e427ebae3d9ce8bb134db11.html">Simulacion de un ahorro en Bancolombia para adquirir una moto</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="22e39a1dbeee9d9babe0b70385f911df6f0dfe6511eefc0bec9c31840c09b963.html">Prueba a realizar - Generar una excepcion</a>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>09:03:34</td>
+                                                    <td>00:38</td>
+                                                    <td><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> <span style="display:none">ERROR</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h3><i class="fas fa-edit"></i> Manual Tests</h3>
+
+                                                No manual tests were recorded
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 2.0.4</span>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

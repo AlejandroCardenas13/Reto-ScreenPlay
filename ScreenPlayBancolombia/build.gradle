@@ -1,0 +1,32 @@
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+buildscript {
+	repositories {
+	    jcenter()
+        mavenLocal()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.4") 
+    }//Funcines que tienen determinadas caracteristicas
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'net.serenity-bdd.aggregator'  
+
+dependencies {
+    testCompile 'net.serenity-bdd:serenity-core:2.0.4'//El que trae todas las librerias
+    testCompile 'net.serenity-bdd:serenity-junit:2.0.4'//Corredor de pruebas
+    testCompile('junit:junit:4.12')//Corredor de pruebas
+    testCompile('org.assertj:assertj-core:1.7.0')//Aseverar que en un momento una condicion debe ser cierta
+    testCompile('org.slf4j:slf4j-simple:1.7.7')
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.9'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.9'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
+    compile group: 'org.apache.poi', name: 'poi', version: '3.9'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
+}
+gradle.startParameter.continueOnFailure = true
